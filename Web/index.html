@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Estante Vivo</title>
+</head>
+<body>
+
+    <nav>
+
+        <h2>Estante Viva</h2>
+        
+        <div class="cabecalho">
+            <a href="">Catálogo</a>
+            <p>|</p>
+            <a href="">Cadastro</a>
+        </div>
+
+    </nav>
+
+    <main>
+
+        <h1>Gerenciamento de livros</h1>
+
+            <form>
+
+                <h3>Cadastrar livro</h3>
+
+                <div class="titulo">
+                    <label for="title">Título *</label><br>
+                    <input type="text" required placeholder="Informe o título">
+                </div>
+
+                <div class="autor">
+                    <label for="autor">Autor *</label><br>
+                    <input type="text" required placeholder="Informe o autor">
+                </div>
+
+                <div class="preco">
+                    <label for="preco">Preço (R$) *</label><br>
+                    <input type="text" required placeholder="0,00">
+                </div>
+
+                <div class="quantidade_estoque">
+                    <label for="estoque">Quantidade em estoque *</label><br>
+                    <input type="text" required placeholder="0">
+                </div>
+
+                <button class="botao_cadastrar">Cadastrar livro</button>
+
+            </form>
+
+            <section>
+
+                <h3>Catálogo de livros</h3>
+
+                <div class="buscar_titulo">
+                    <input type="text" required placeholder="Buscar por parte do título">
+                </div>
+
+                <button class="botao_limpar">Buscar</button> <button class="botao_limpar">Limpar</button>
+
+            </section>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+                        <th>Título</th>
+                        <th>Autor</th>
+                        <th>Preço</th>
+                        <th>Estoque</th>
+                        <th>Ações</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>Título cadastro</td>
+                        <td>Nome do autor</td>
+                        <td>R$ 0,00</td>
+                        <td>0</td>
+                    </tr>
+
+                    <tr>
+                        <td>Título cadastro</td>
+                        <td>Nome do autor</td>
+                        <td>R$ 0,00</td>
+                        <td>0</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+                <button class="botao_editar">Editar</button> <button class="botao_excluir">Excluir</button>
+                <button class="botao_editar">Editar</button> <button class="botao_excluir">Excluir</button>     
+
+    </main>
+
+    <footer>Estante Viva — Gerenciamento de catálogo</footer>
+</body>
+</html>
