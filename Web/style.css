@@ -7,12 +7,14 @@
 
 body {
     background-color: #FFFFFF;
+    color: #333333;
 }
 
 nav, footer {
     background-color: #245C46;
-    border: 1px solid hsl(0, 0%, 39%);
-    padding: 15px 20px;
+    color: #FFFFFF;
+    border: 1px solid #999;
+    padding: 12px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,7 +27,7 @@ nav, footer {
 }
 
 a {
-    color: #000000;
+    color: #FFFFFF;
     text-decoration: none;
     font-size: 13px;
 }
@@ -40,7 +42,7 @@ h1 {
 
 form {
     background: #EEEEEE;
-    border: 1px solid hsl(0, 0%, 39%);
+    border: 1px solid #999;
     padding: 15px;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -67,7 +69,7 @@ input {
     width: 100%;
     height: 35px;
     padding: 8px;
-    border: 1px solid hsl(0, 0%, 39%);
+    border: 1px solid #999;
 }
 
 .botao_cadastrar {
@@ -76,10 +78,11 @@ input {
 }
 
 button {
-    background: #245C46;
-    color: white;
+    background-color: #245C46;
+    color: #FFFFFF;
     border: 1px solid #245C46;
     padding: 8px 12px;
+    cursor: pointer;
 }
 
 section {
@@ -99,8 +102,29 @@ section h3 {
     height: 35px;
 }
 
+th, td {
+    border-bottom: 1px solid #999;
+    padding: 7px 10px;
+    text-align: left;
+}
+
 table {
     width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #999;
     font-size: 12px;
-    
+}
+
+th {
+    background-color: #EEEEEE;
+}
+
+td button {
+    padding: 8px 12px;
+}
+
+footer {
+    justify-content: center;
+    margin-top: 10px;
+    font-size: 13px;
 }
