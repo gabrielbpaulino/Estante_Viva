@@ -97,7 +97,7 @@ section h3 {
     grid-column: 1 / -1;
 }
 
-.botao_limpar {
+.botao_buscar, .botao_limpar {
     min-width: 102px;
     height: 35px;
 }

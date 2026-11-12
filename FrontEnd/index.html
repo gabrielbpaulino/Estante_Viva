@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <title>Estante Vivo</title>
 </head>
 <body>
@@ -24,31 +25,33 @@
 
         <h1>Gerenciamento de livros</h1>
 
-            <form>
+            <form id="formLivro">
 
                 <h3>Cadastrar livro</h3>
 
                 <div class="titulo">
                     <label for="title">Título *</label><br>
-                    <input type="text" required placeholder="Informe o título">
+                    <input type="text" id="title" maxlength="150" required placeholder="Informe o título">
                 </div>
 
                 <div class="autor">
                     <label for="autor">Autor *</label><br>
-                    <input type="text" required placeholder="Informe o autor">
+                    <input type="text" id="autor" maxlength="120" required placeholder="Informe o autor">
                 </div>
 
                 <div class="preco">
                     <label for="preco">Preço (R$) *</label><br>
-                    <input type="text" required placeholder="0,00">
+                    <input type="text" id="preco" required placeholder="0,00">
                 </div>
 
                 <div class="quantidade_estoque">
                     <label for="estoque">Quantidade em estoque *</label><br>
-                    <input type="text" required placeholder="0">
+                    <input type="text" id="estoque" min="0" step="1" required placeholder="0">
                 </div>
 
-                <button class="botao_cadastrar">Cadastrar livro</button>
+                <button type="submit" id="botaoSalvar" class="botao_cadastrar">Cadastrar livro</button>
+
+                <p id="mensagem"></p>
 
             </form>
 
@@ -57,10 +60,10 @@
                 <h3>Catálogo de livros</h3>
 
                 <div class="buscar_titulo">
-                    <input type="text" required placeholder="Buscar por parte do título">
+                    <input type="text" id="buscarTitulo" required placeholder="Buscar por parte do título">
                 </div>
 
-                <button class="botao_limpar">Buscar</button> <button class="botao_limpar">Limpar</button>
+                <button id="botaoBuscar" class="botao_buscar">Buscar</button> <button id="" class="botao_limpar">Limpar</button>
 
             </section>
 
@@ -78,7 +81,7 @@
 
                 </thead>
 
-                <tbody>
+                <tbody id="listaLivros">
 
                     <tr>
                         <td>Título cadastro</td>
