@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <title>Estante Vivo</title>
 </head>
 <body>
@@ -41,12 +41,12 @@
 
                 <div class="preco">
                     <label for="preco">Preço (R$) *</label><br>
-                    <input type="text" id="preco" required placeholder="0,00">
+                    <input type="number" id="preco" min="0" step="0.01" required placeholder="0,00">
                 </div>
 
                 <div class="quantidade_estoque">
                     <label for="estoque">Quantidade em estoque *</label><br>
-                    <input type="text" id="estoque" min="0" step="1" required placeholder="0">
+                    <input type="number" id="estoque" min="0" step="1" required placeholder="0">
                 </div>
 
                 <button type="submit" id="botaoSalvar" class="botao_cadastrar">Cadastrar livro</button>
@@ -63,8 +63,7 @@
                     <input type="text" id="buscarTitulo" required placeholder="Buscar por parte do título">
                 </div>
 
-                <button id="botaoBuscar" class="botao_buscar">Buscar</button> <button id="" class="botao_limpar">Limpar</button>
-
+                <button type="button" id="botaoBuscar" class="botao_buscar">Buscar</button> <button type="button" id="botaoLimpar" class="botao_limpar">Limpar</button>
             </section>
 
             <table>
