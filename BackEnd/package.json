@@ -1,0 +1,7 @@
+{
+    "id_livro": 1,
+    "titulo": "Dom Casmurro",
+    "autor": "Machado de Assis",
+    "preco": "39.90",
+    "quantidade_estoque": 10
+}
